@@ -4,31 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tax Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Tax Calculator</h1>
-        <form action="" method="post">
-            <label for="amount">Amount:</label>
-            <input type="number" id="amount" name="amount" required>
-            <br><br>
-            <label for="country">Country:</label>
-            <select id="country" name="country" required>
-                <option value="USA">USA</option>
-                <option value="Canada">Canada</option>
-                <option value="UK">UK</option>
-                <option value="Australia">Australia</option>
-                <option value="Germany">Germany</option>
-                <option value="Spain">Spain</option>
-            </select>
-            <br><br>
-            <button type="submit">Calculate Tax</button>
-        </form>
-        {% if tax_amount %}
-            <p>Tax amount: {{ tax_amount }}</p>
-        {% endif %}
-    </div>
+<header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+</header>
+<main>
+        <section id="home">
+            <h1>Welcome to Tax Calculator</h1>
+            <p>Get started with our tax calculator and optimize your taxes today!</p>
+        </section>
+        <section id="profile">
+            <h1>User Profile</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Create Profile">
+            </form>
+        </section>
+ <section id="calculator">
+            <h1>Tax Calculator</h1>
+            <form>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <!-- Add more countries -->
+         </select><br><br>
+                <label for="income">Income:</label>
+                <input type="number" id="income" name="income"><br><br>
+                <label for="income-source">Income Source:</label>
+                <select id="income-source" name="income-source">
+                    <option value="salary">Salary</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="investments">Investments</option>
+                    <option value="rental">Rental Income</option>
+                    <!-- Add more income sources -->
+                </select><br><br>
+                <label for="deductions">Deductions:</label>
+                <input type="number" id="deductions" name="deductions"><br><br>
+                <label for="credits">Credits:</label>
+                <input type="number" id="credits" name="credits"><br><br>
+                <input type="submit" value="Calculate Taxes">
+            </form>
+            <div id="tax-bracket-visualization"></div>
+        </section>
+        <section id="resources">
+            <h1>Tax Resources</h1>
+            <ul>
+                <li><a href="#">Tax Guide for Beginners</a></li>
+                <li><a href="#">Tax Laws and Regulations</a></li>
+                <li><a href="#">Tax Filing Tips and Tricks</a></li>
+            </ul>
+        </section>
+        <section id="community">
+            <h1>Tax Community</h1>
+            <ul>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQs</a></li>
+
+
+                
+            </ul>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

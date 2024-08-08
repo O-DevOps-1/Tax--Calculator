@@ -1,66 +1,114 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color:
+
+
+
+Share
+New Chat
+
+continue
+
+
+Here is the rest of the code:
+
+CSS (in styles.css file)
+
+css
+
+Verify
+Edit
+Copy code
+section {
+    background-color: #f7f7f7;
+    padding: 2em;
+    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 0;
 }
 
-input[type="number"] {
+p {
+    margin-bottom: 20px;
+}
+
+#tax-bracket-visualization {
     width: 100%;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+    height: 200px;
+    background-color: #333;
+    background-image: linear-gradient(to right, #333, #555);
+    animation: animatedBackground 10s infinite;
 }
 
-select {
+@keyframes animatedBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.portfolio-item img {
     width: 100%;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-}
-
-button[type="submit"] {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #3e8e41;
-}
-
-/* animated background try */
-
-body {
-    background-image: linear-gradient(to bottom, #f9f9f9, #fff);
-    background-size: 100% 300px;
-    background-position: 0% 100%;
-    transition: background-position 0.5s ease-out;
-}
-
-body.animate {
-    background-position: 100% 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }

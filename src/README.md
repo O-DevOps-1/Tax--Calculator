@@ -1,4 +1,4 @@
-The roject's deployment Link is directly located in the description! 
+The project's deployment Link is directly located in the description! 
 If you desire to install it, it is of utmost importance to know that his program needs the framework Flask to be executed correctly. There are several options for doing that: 
 
 
